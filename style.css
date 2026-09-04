@@ -353,6 +353,57 @@ body {
     transform: translateY(-8px);
 }
 
+.education-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.education-table th,
+.education-table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.education-table tbody tr {
+    transition: 0.3s ease;
+}
+
+.education-table tbody tr:hover {
+    transform: translateY(-2px);
+}
+
+.project-card {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-image-placeholder {
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+@media (max-width: 576px) {
+
+    .education-table {
+        font-size: 14px;
+    }
+
+    .education-table th,
+    .education-table td {
+        padding: 10px;
+    }
+
+}
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -377,55 +428,43 @@ body {
     transform: translateY(-4px);
 }
 
+
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 30px;
     margin-top: 40px;
 }
 
+.project-container>.col-lg-4 {
+    display: flex;
+}
+
 .project-card {
+    width: 100%;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 15px;
-    padding: 25px;
+    overflow: hidden;
+    padding: 0;
     box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
     transition: .3s;
 }
 
-.project-container .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 18px;
-    padding: 25px;
-    border: 1px solid #ddd;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
-    transition: .3s;
-}
-
-.project-container .card:hover {
+.project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
 }
 
-.project-container h3 {
-    color: #374151;
-    font-size: 24px;
-    margin-bottom: 5px;
+.project-card .card-body {
+    padding: 25px;
 }
 
-.project-container h5 {
+.project-image-placeholder {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background: #F3F4F6;
     color: #6B7280;
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.project-container p {
-    color: #555;
-    line-height: 1.7;
 }
 
 .feature-box {
@@ -471,23 +510,20 @@ body {
     color: #fff;
 }
 
-#certificates .project-container {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+.certificate-image {
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
 }
 
 #certificates .card {
     text-align: center;
+    height: 100%;
 }
 
-#certificates img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    transition: .35s;
-}
-
-#certificates img:hover {
-    transform: scale(1.03);
+#certificates .card:hover {
+    transform: translateY(-8px);
 }
 
 #certificates h3 {
