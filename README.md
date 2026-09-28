@@ -2,7 +2,11 @@
 
 A responsive personal portfolio website built using **HTML5, CSS3, and Bootstrap 5** to showcase my profile, education, technical skills, projects, certifications, and contact information.
 
-## 🚀 Features
+## Live Demo
+
+(https://ashwininaik.netlify.app/)
+
+## Features
 
 * Responsive single-page portfolio
 * Hero section with profile information and profile image
@@ -18,7 +22,7 @@ A responsive personal portfolio website built using **HTML5, CSS3, and Bootstrap
 * Hover effects and smooth scrolling
 * Mobile-friendly design
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **HTML5** – Website structure
 * **CSS3** – Custom styling and visual design
@@ -28,7 +32,7 @@ A responsive personal portfolio website built using **HTML5, CSS3, and Bootstrap
 * **Git & GitHub** – Version control and project hosting
 * **Netlify** – Deployment
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 personal-portfolio/
